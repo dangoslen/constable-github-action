@@ -9,4 +9,4 @@ outputs:
     description: 'Feedback on how to improve the repo is provided'
 runs:
   using: 'node12'
-  main: 'main/index.js'
+  main: 'dist/index.js'
