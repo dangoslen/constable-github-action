@@ -1,8 +1,12 @@
-name: 'Wait'
+name: 'Constable'
 description: 'Create a JavaScript Action grade the project'
+inputs:
+
 outputs:
-  grade:
-    description: 'The output of this file will be a grade and percentage given to the repo.'
+  score:
+    description: 'The repository is assigned a score based on the evaluation criterias'
+  feedback:
+    description: 'Feedback on how to improve the repo is provided'
 runs:
   using: 'node12'
-  main: 'dist/index.js'
+  main: 'main/index.js'
