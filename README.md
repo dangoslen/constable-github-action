@@ -1,13 +1,14 @@
-<p align="center">
+<div align="center">
 
   <h1>Constable</h1>
 
   <h2>Keeping repositories contributable.</h2>
-
   <a href="https://github.com/dangoslen/constable-github-action/actions"><img alt="constable-github-action-status" src="https://github.com/dangoslen/constable-github-action/workflows/units-test/badge.svg"></a>
   <img alt="constable-github-action-coverage" src="./assets/coverage-badge.svg">
-</p>
 
+  [![Constable](http://img.youtube.com/vi/NXANSl0S1xA/0.jpg)](http://www.youtube.com/watch?v=NXANSl0S1xA "Constable")
+  
+</div>
 ---
 
 Constable is a simple GitHub action to grade your repositories contributability. Simple add the action to any GitHub Actions workflow you like and start seeing how contributable your repository is. A sample workflow is provided below:
@@ -29,10 +30,10 @@ jobs:
       uses: thollander/actions-comment-pull-request@master
       with:
         message: "
-# ![](https://img.shields.io/badge/Constable-${{ pull-request-workflow.constable.outputs.explanation }}-blue)
+# ![](https://img.shields.io/badge/Constable-${{ pull-request-workflow.constable.outputs.grade }}-blue)
 <details>
   <summary>Click to see the report!</summary>
-  ${{ pull-request-workflow.constable.outputs.explanation }}
+  ${{ pull-request-workflow.constable.outputs.report }}
 </details>"
         GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
 ```
