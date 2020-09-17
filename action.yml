@@ -1,6 +1,5 @@
 name: 'Constable'
-inputs:
-
+description: 'A javascript action'
 outputs:
   score:
     description: 'The repository is assigned a score based on the evaluation criterias'
