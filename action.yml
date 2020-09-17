@@ -1,5 +1,4 @@
 name: 'Constable'
-description: 'Create a JavaScript Action grade the project'
 inputs:
 
 outputs:

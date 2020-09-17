@@ -36,7 +36,11 @@ const fs = require('fs');
           total_score = total_score+1;
         }
         if(file == 'CITATION.md'){
-          license_present = 1;
+          citations_present = 1;
+          total_score = total_score+1;
+        }
+        if(file == '.gitignore'){
+          gitignore_present = 1;
           total_score = total_score+1;
         }
       });
