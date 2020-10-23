@@ -95,7 +95,7 @@ Since the packaged `index.js` is run from the `./dist` folder.
 git add dist
 ```
 
-And now GitHub will know to use the action sourced under th `./dist` folder. You could use it in a workflow like 
+And now GitHub will know to use the action sourced under th `./dist` folder. You could use it in a workflow like: 
 
 ```yaml
 uses: dangoslen/constable-github-action@<your-branch>
